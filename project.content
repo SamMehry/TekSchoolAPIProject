@@ -1,0 +1,10 @@
+http%3A%2F%2Ftekschool-test-env.herokuapp.com\RetrieveAllUsers.xml
+http%3A%2F%2Ftekschool-test-env.herokuapp.com\CreateUser.xml
+http%3A%2F%2Ftekschool-test-env.herokuapp.com\retrieveUserByParam.xml
+SDET-Test-Suite\GetAllUsers.xml
+SDET-Test-Suite\CreateUser.xml
+SDET-Test-Suite\GetUserByParam.xml
+SDET-Test-Suite\Task1CreateUser.xml
+SDET-Test-Suite\Task2GetUserByParam.xml
+SDET-Test-Suite\Task3GetUserByParam.xml
+SDET-Test-Suite\Task4GetAllUsers.xml

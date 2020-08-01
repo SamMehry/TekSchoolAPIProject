@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f012b7be-127e-411c-8572-7bbd14766f0b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CreateUser" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f012b7be-127e-411c-8572-7bbd14766f0bfileName">CreateUser</con:setting></con:settings><con:testStep type="restrequest" name="REST Request" id="3d5290b2-99f9-4b01-8ac0-d6b314735b71"><con:settings/><con:config service="http://tekschool-test-env.herokuapp.com" methodName="Method 1" resourcePath="/jpa/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="96defe7f-35b3-44b1-abef-8a403ca6dcc5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint><con:request>{
+  "birthDate": "1988-07-29T23:13:51.813Z",
+  "employmentStatus": "Retired",
+  "firstName": "Brad",
+  "gender": "Male",
+  "languagePref": "English",
+  "lastName": "Pit",
+  "maritalStatus": "Single",
+  "middleName": "Brad",
+  "suffix": "Mr.",
+  "title": "Actor"
+}</con:request><con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users</con:originalUri><con:assertion type="Invalid HTTP Status Codes" id="9c84a4bd-3d95-431f-9620-c2db3493c017" name="Invalid HTTP Status Codes"><con:configuration><codes>404, 500, 400</codes></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="055f9d00-19de-4a41-96ce-b7541ad91aa9" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="66641b95-05a6-409b-8a15-6bde5d287455" name="Response SLA"><con:configuration><SLA>5000</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="b0f2826f-6433-4d5b-9aac-959ea33aaded" name="Script Assertion"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

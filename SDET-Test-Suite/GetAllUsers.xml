@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3fa9076a-1cb5-453b-a4ef-2da6f0810482" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAllUsers" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="3fa9076a-1cb5-453b-a4ef-2da6f0810482fileName">GetAllUsers</con:setting></con:settings><con:testStep type="restrequest" name="REST Request" id="06879282-6487-4050-9a24-f9d5e5415e1d"><con:settings/><con:config service="http://tekschool-test-env.herokuapp.com" methodName="Users 1" resourcePath="/jpa/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="0598ddce-a92c-466c-a08b-27875e9ed79e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint><con:request/><con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users</con:originalUri><con:assertion type="Invalid HTTP Status Codes" id="f90e5c92-7e59-4890-8e55-c7abcaa8bbb8" name="Invalid HTTP Status Codes"><con:configuration><codes>500,404,400</codes></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="bd79711b-01ce-49f0-97a0-e604ecf51c4d" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="c660e6dc-b224-4cec-8365-312d404d1fce" name="Response SLA"><con:configuration><SLA>4750</SLA></con:configuration></con:assertion><con:assertion type="Sensitive Information Exposure" id="894c8906-dd2a-4e10-8eeb-93b5c0680f48" name="Sensitive Information Exposure"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="1fb902bf-286a-4a7a-9c9f-1badcf68244d"><con:settings/><con:config><script>/********************************************/
+
+/*
+ * Written by SDET
+ * Date
+ * Test case Name: Get All Users
+ * 
+ */
+
+ log.info testName = "GetAllUsers"
+ log.info testerName = "SDET"
+ log.info projectName = "Tek"</script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

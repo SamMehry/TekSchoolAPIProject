@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="ea8d6b0f-86a1-49a0-89c4-e89a96dbe732" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Task1CreateUser" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ea8d6b0f-86a1-49a0-89c4-e89a96dbe732fileName">Task1CreateUser</con:setting></con:settings><con:testStep type="restrequest" name="REST Request" id="3578fe9e-501c-4d45-8f98-c254899090cc"><con:settings/><con:config service="http://tekschool-test-env.herokuapp.com" methodName="Method 1" resourcePath="/jpa/users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="96defe7f-35b3-44b1-abef-8a403ca6dcc5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint><con:request>{
+  "birthDate": "1988-07-29T23:13:51.813Z",
+  "employmentStatus": "Retired",
+  "firstName": "Brad",
+  "gender": "Male",
+  "languagePref": "English",
+  "lastName": "Pit",
+  "maritalStatus": "Single",
+  "middleName": "Brad",
+  "suffix": "Mr.",
+  "title": "Actor"
+}</con:request><con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users</con:originalUri><con:assertion type="Invalid HTTP Status Codes" id="4709d9fc-d03d-4126-8ea3-862c1e059c9a" name="Invalid HTTP Status Codes"><con:configuration><codes>404, 400, 500
+</codes></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="b8d9f27b-d73b-4783-bf72-a66aaccbed1d" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="c426b8a8-f5fe-4f0a-aa9d-5b8ad6b18595" name="Response SLA"><con:configuration><SLA>6000</SLA></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
